@@ -37,7 +37,7 @@ float quadratico (int *X, int *Y, int n)  // o par de pontos mais próximos dent
     d = FLT_MAX;  // distancia <- INFINITO
     float aux;
 for (int i=0; i<n; i++){
-    for (int j=1; j<n; j++){
+    for (int j=i+1; j<n; j++){
         aux = dist(X[i],Y[i], X[j], Y[j]);
         if ( aux < d)  // Se a distancia dos pontos atuais for menor que a armazenada, entao esta se torna a menor
             d = aux;
